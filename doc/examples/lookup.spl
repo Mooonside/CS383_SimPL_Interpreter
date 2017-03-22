@@ -1,0 +1,7 @@
+let plus = 
+	rec p =>fn x => fn y => if iszero x then y else p (pred x) (succ y)
+in
+	(plus 2 3); 
+	(plus 2 4)
+end
+
